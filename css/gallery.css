@@ -1,0 +1,118 @@
+/* Reset de márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Estilo para el header */
+header {
+    background-color: #333;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+/* Estilo para la barra de navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+nav ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilo para el botón de cerrar sesión */
+.boton_cerrar_sesión {
+    background-color: #f44336; /* Rojo para cerrar sesión */
+}
+
+.boton_cerrar_sesión:hover {
+    background-color: #d32f2f; /* Rojo más oscuro al pasar el ratón */
+}
+
+/* Estilo para el título de bienvenida */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para las imágenes de subasta */
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Contenedor de las imágenes en subasta */
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Estilo para cada imagen */
+div > div {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+}
+
+/* Imagen */
+div > div img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Estilo de los textos debajo de las imágenes */
+p {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Estilo para los mensajes de error o si no hay subastas */
+.error-message {
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-align: center;
+}
+

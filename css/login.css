@@ -1,0 +1,91 @@
+/* Reset de márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fondo claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Fullscreen */
+    flex-direction: column;
+}
+
+/* Estilo para el formulario */
+form {
+    background-color: #fff; /* Fondo blanco */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Título del formulario */
+form h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los inputs */
+input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus, input[type="text"]:focus {
+    border-color: #FF6F61; /* Color cuando el input está en foco */
+}
+
+/* Estilo para el botón de inicio de sesión */
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #FF6F61; /* Color de fondo del botón */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio de color al pasar el ratón sobre el botón */
+input[type="submit"]:hover {
+    background-color: #FF3B2D; /* Un tono más oscuro */
+}
+
+/* Estilo para el enlace de registro */
+a.boton_registrarse {
+    text-decoration: none;
+    color: #FF6F61;
+    font-size: 1rem;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Cambio de color del enlace al pasar el ratón */
+a.boton_registrarse:hover {
+    color: #FF3B2D;
+}
+
+/* Estilo para el mensaje de error */
+p {
+    font-size: 1rem;
+    color: #FF3B2D; /* Rojo para errores */
+    margin-top: 20px;
+}
+
